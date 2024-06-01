@@ -171,7 +171,7 @@ export default function Home() {
       {/* Hero */}
       <section className="mb-auto py-4 lg:py-8 px-4 w-full max-w-6xl items-center justify-center text-center">
         <div className="flex flex-col items-center justify-center gap-4">
-          <h1 className="text-4xl lg:text-6xl font-bold tracking-tighter">Jim's Calorie Counter</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold tracking-tighter">Jim&apos;s Calorie Counter</h1>
           <p className="text-2xl text-gray-500">No ads or monthly subscription. Own your nutrition.</p>
         </div>
         {/* Screenshots */}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -132,11 +133,23 @@ const Rounded = ({size, shadow} : { size : number, shadow?: boolean}) => (
 
 )
 
+const metadata = {
+  title: "Jim's Calorie Counter - No ads or monthly fees",
+  description: "Own your nutrition. Purchase once, and use forever. Runs 100% on-device, so your data is secure.",
+  imageUrl: "https://jims.cx/og-image.png"
+}
+
 export default function Home() {
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between ${inter.className} tracking-tight font-medium`}
     >
+      {/* Metadata */}
+      <Head>
+        <title>{metadata.title}</title>
+        <meta property="og:title" content={metadata.title} key="title" />
+      </Head>
+
       {/* Navigation */}
       <nav className="hidden lg:flex flex-row items-center justify-center w-full max-w-6xl py-6 gap-8">
         {/* Logo */}
@@ -144,9 +157,9 @@ export default function Home() {
 
         {/* Links */}
         <div className="flex flex-row items-center justify-center gap-4 text-gray-500 text-sm ml-auto">
-          <a className="p-2 rounded-xl hover:bg-gray-50" href="#">Discord</a>
+          <a className="p-2 rounded-xl hover:bg-gray-50" href="https://discord.gg/TT8W6DfXHe">Discord</a>
           <a className="p-2 rounded-xl hover:bg-gray-50" href="https://github.com/logmeals/jims-calorie-counter" target="_blank">Github</a>
-          <a className="p-2 rounded-xl hover:bg-gray-50" href="/privacy">Privacy</a>
+          {/*<a className="p-2 rounded-xl hover:bg-gray-50" href="/privacy">Privacy</a>*/}
         </div>
       </nav>
 
@@ -166,13 +179,13 @@ export default function Home() {
           {/* Screenshot group */}
           <div className="relative flex flex-row relative items-center justify-center gap-4 overflow-y-hidden" style={{zIndex: 1}}>
             <div className="flex items-center justify-center" style={{borderRadius: 29, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 8, zIndex: 2}}>
-              <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6'}}></div>
+              <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6', backgroundImage: 'url(/Processing.svg)', backgroundSize: 'cover'}}></div>
             </div>    
             <div className="flex items-center justify-center" style={{borderRadius: 37, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 10, zIndex: 3, boxShadow: '0 15px 55px rgba(0,0,0,.12)'}}>
-              <div style={{width: 299, height: 644, borderRadius: 27, background: '#F2F1F6'}}></div>
+              <div style={{width: 299, height: 644, borderRadius: 27, background: '#F2F1F6', backgroundImage: 'url(/Summary.svg)', backgroundSize: 'cover'}}></div>
             </div>
             <div className="flex items-center justify-center" style={{borderRadius: 29, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 8, zIndex: 2}}>
-              <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6'}}></div>
+              <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6', backgroundImage: 'url(/Settings.svg)', backgroundSize: 'cover'}}></div>
             </div>        
           </div>
           {/* Overlay */}

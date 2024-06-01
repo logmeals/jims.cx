@@ -178,13 +178,13 @@ export default function Home() {
         <div className="mt-8 mb-2 lg:my-12" style={{ height: 430, overflowY: 'hidden', position: 'relative' }}>
           {/* Screenshot group */}
           <div className="relative flex flex-row relative items-center justify-center gap-4 overflow-y-hidden" style={{zIndex: 1}}>
-            <div className="flex items-center justify-center" style={{borderRadius: 29, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 8, zIndex: 2}}>
+            <div className="hidden lg:flex items-center justify-center" style={{borderRadius: 29, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 8, zIndex: 2}}>
               <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6', backgroundImage: 'url(/Processing.svg)', backgroundSize: 'cover'}}></div>
             </div>    
             <div className="flex items-center justify-center" style={{borderRadius: 37, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 10, zIndex: 3, boxShadow: '0 15px 55px rgba(0,0,0,.12)'}}>
               <div style={{width: 299, height: 644, borderRadius: 27, background: '#F2F1F6', backgroundImage: 'url(/Summary.svg)', backgroundSize: 'cover'}}></div>
             </div>
-            <div className="flex items-center justify-center" style={{borderRadius: 29, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 8, zIndex: 2}}>
+            <div className="hidden lg:flex items-center justify-center" style={{borderRadius: 29, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 8, zIndex: 2}}>
               <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6', backgroundImage: 'url(/Settings.svg)', backgroundSize: 'cover'}}></div>
             </div>        
           </div>

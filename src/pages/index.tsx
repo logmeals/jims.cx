@@ -133,10 +133,12 @@ const Rounded = ({size, shadow} : { size : number, shadow?: boolean}) => (
 
 )
 
+const baseURL = "https://jims.cx/"
+
 const metadata = {
   title: "Jim's Calorie Counter - No ads or monthly fees",
   description: "Own your nutrition. Purchase once, and use forever. Runs 100% on-device, so your data is secure.",
-  imageUrl: "https://jims.cx/og-image.png"
+  imageUrl: `${baseURL}og-image.png`,
 }
 
 export default function Home() {
@@ -146,8 +148,23 @@ export default function Home() {
     >
       {/* Metadata */}
       <Head>
-        <title>{metadata.title}</title>
-        <meta property="og:title" content={metadata.title} key="title" />
+      <title>{ metadata.title }</title>
+      <meta name="title" content={metadata.title} />
+      <meta name="description" content={metadata.description} />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={baseURL} />
+      <meta property="og:title" content={metadata.title} />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content={metadata.imageUrl} />
+
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={baseURL} />
+      <meta property="twitter:title" content={metadata.title} />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content={metadata.imageUrl} />
       </Head>
 
       {/* Navigation */}

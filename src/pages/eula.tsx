@@ -170,8 +170,8 @@ export default function Home() {
       {/* Navigation */}
       <nav className="hidden lg:flex flex-row items-center justify-center w-full max-w-6xl py-6 gap-8">
         {/* Logo */}
-        <Logo/>
-
+        <a href="/"><Logo/></a>
+        
         {/* Links */}
         <div className="flex flex-row items-center justify-center gap-4 text-gray-500 text-sm ml-auto">
           <a className="p-2 rounded-xl hover:bg-gray-50" href="https://discord.gg/TT8W6DfXHe">Discord</a>

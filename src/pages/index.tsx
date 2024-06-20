@@ -170,7 +170,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="hidden lg:flex flex-row items-center justify-center w-full max-w-6xl py-6 gap-8">
         {/* Logo */}
-        <a href="/"><Logo/></a>
+        <Link href="/"><Logo/></Link>
         
         {/* Links */}
         <div className="flex flex-row items-center justify-center gap-4 text-gray-500 text-sm ml-auto">

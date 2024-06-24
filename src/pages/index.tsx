@@ -189,21 +189,21 @@ export default function Home() {
       {/* Hero */}
       <section className="mb-auto py-4 lg:py-8 px-4 w-full max-w-6xl items-center justify-center text-center">
         <div className="flex flex-col items-center justify-center gap-4">
-          <h1 className="text-4xl lg:text-6xl font-bold tracking-tighter">Jim&apos;s Calorie Counter</h1>
-          <p className="text-2xl text-gray-500">No ads or monthly subscription. Own your nutrition.</p>
+          <h1 className="text-4xl lg:text-6xl font-bold tracking-tighter leading-relaxed">Track your nutrition with a barcode, photo, or description in seconds</h1>
+          <p className="text-2xl text-gray-500">No ads or monthly subscription. Diable usage tracking and add your OpenAI key to go private.</p>
         </div>
         {/* Screenshots */}
         <div className="mt-8 mb-2 lg:my-12" style={{ height: 430, overflowY: 'hidden', position: 'relative' }}>
           {/* Screenshot group */}
           <div className="relative flex flex-row relative items-center justify-center gap-4 overflow-y-hidden" style={{zIndex: 1}}>
             <div className="hidden lg:flex items-center justify-center" style={{borderRadius: 29, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 8, zIndex: 2}}>
-              <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6', backgroundImage: 'url(/Processing.svg)', backgroundSize: 'cover'}}></div>
+              <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6', backgroundImage: 'url(/onboarding.svg)', backgroundSize: 'cover'}}></div>
             </div>    
             <div className="flex items-center justify-center" style={{borderRadius: 37, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 10, zIndex: 3, boxShadow: '0 15px 55px rgba(0,0,0,.12)'}}>
-              <div style={{width: 299, height: 644, borderRadius: 27, background: '#F2F1F6', backgroundImage: 'url(/Summary.svg)', backgroundSize: 'cover'}}></div>
+              <div style={{width: 299, height: 644, borderRadius: 27, background: '#F2F1F6', backgroundImage: 'url(/summary.svg)', backgroundSize: 'cover'}}></div>
             </div>
             <div className="hidden lg:flex items-center justify-center" style={{borderRadius: 29, background: 'linear-gradient(to bottom, #FFF, #F0F0F0)', border: 'solid 1px #DDD', padding: 8, zIndex: 2}}>
-              <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6', backgroundImage: 'url(/Settings.svg)', backgroundSize: 'cover'}}></div>
+              <div style={{width: 232, height: 500, borderRadius: 21, background: '#F2F1F6', backgroundImage: 'url(/charts.svg)', backgroundSize: 'cover'}}></div>
             </div>        
           </div>
           {/* Overlay */}

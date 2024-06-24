@@ -221,13 +221,10 @@ export default function Home() {
           <a target="_blank" href="https://apps.apple.com/us/app/jims-calorie-counter/id6502675845" className="rounded-xl bg-blue-500 hover:bg-blue-400 text-white py-2 px-4 flex flex-row gap-4 items-center justify-center">
             <span className="text-xl p-4 flex">Download now</span>
             <div className="flex flex-col items-center justify-center text-center">
-              <span className="opacity-80">$1.99</span>
+              <span className="opacity-80">$19.99</span>
               <span className="opacity-40">one-time fee</span>
             </div>
           </a>
-
-          {/* Disclaimer */}
-          <p className="opacity-40 text-sm">*Some features require an OpenAI API Key</p>
         </div>
       </section>
 
